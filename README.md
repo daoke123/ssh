@@ -2,7 +2,8 @@
 自用魔改一键DD脚本，仅支持密钥登录，SSH端口22345<br>
 ```
 bash <(curl -k https://raw.githubusercontent.com/GouGoGoal/SHELL/master/NetReinstallDebian.sh) 
-
+```
+```
 默认为Debian11，下参数可手动调整
 --version 10
 默认64位系统，下参数可指定为ARM
@@ -30,7 +31,7 @@ bash <(curl -k https://raw.githubusercontent.com/GouGoGoal/SHELL/master/NetReins
 ```
 
 
-#免密登录，公钥换成自己的
+### 免密登录，公钥换成自己的
 ```
 mkdir /root/.ssh;echo "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA5qK3fDbxZshKP3MbQo4xm1YNmTQsHcapbF8wAXJJcCgxtzujH9QuFCeQzsQ3QET2qZgG1k0GfTV6slRdrJJeI8fdwFgRc28JEhXh4rGx8MUdotJh8eVAnygWATBtet2Au5gpn3s3s44XqgnWXY+bRGJ6WoB58/3fjPG1YZIR5wh9knNxRt/9VO8YCTBqQP3z5hdPuNldx3jgIuFNhcI1qBVnQZ2czC2Zv8sHDDuiuNoaomKsg7LgbhKPnvRfEGb+yZaU/KKwbEJwbFcZkT7QiW90OhYVKT2+K8xEsUpR4ocH+SxgvFrpyKAXkSqF/Wwe32baAlzrNwucLdsS+jBk3w== OpenSSH-rsa-import-061520" >>/root/.ssh/authorized_keys
 
