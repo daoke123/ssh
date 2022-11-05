@@ -1,5 +1,5 @@
 ### ARM机可用
-自用魔改一键DD脚本，仅支持密钥登录，SSH端口222<br>
+自用魔改一键DD脚本，仅支持密钥登录，SSH端口22345<br>
 ```
 bash <(curl -k https://raw.githubusercontent.com/GouGoGoal/SHELL/master/NetReinstallDebian.sh) 
 
@@ -16,7 +16,7 @@ bash <(curl -k https://raw.githubusercontent.com/GouGoGoal/SHELL/master/NetReins
 ```
 
 ### Linux 网络重装系统脚本
-自用魔改一键DD脚本，仅支持密钥登录，SSH端口222<br>
+自用魔改一键DD脚本，仅支持密钥登录，SSH端口22345<br>
 ```
 bash <(curl -k https://raw.githubusercontent.com/GouGoGoal/SHELL/master/InstallNET.sh) -d 10 -v 64 -a [-p PassWord] [-i eth0] [--mirror  ...]
 ```
@@ -41,9 +41,6 @@ bash <(curl -k https://raw.githubusercontent.com/GouGoGoal/SHELL/master/InstallN
 俄罗斯
 --mirror 'http://ftp.ru.debian.org/debian/'
 ```
-### [forward.sh](https://raw.githubusercontent.com/GouGoGoal/SHELL/master/forward.sh) iptables端口转发工具
-使用iptables进行转发，性能最快，但不支持负载均衡，下载完成后编辑查看如何使用<br>
-### [常用iptables命令](iptables.md)  
 
 ### 一键添加swap
 ```
@@ -51,20 +48,7 @@ bash <(curl -k https://raw.githubusercontent.com/GouGoGoal/SHELL/master/addswap.
 ```
 某些模板开机的Linux系统没有swap，添加swap以提高系统稳定性<br>
 参数以M为单位添加，若没有参数则添加和当前RAM一样大小的swap<br>
-### [BestTrace](https://raw.githubusercontent.com/GouGoGoal/SHELL/master/besttrace) 路由追踪工具
-下载到Linux上，给执行权限，就可以了，besttrace [-g cn] 1.1.1.1<br>
-### 一键测试回程路由
-```
-bash <(curl -k https://raw.githubusercontent.com/GouGoGoal/SHELL/master/mtr.sh)
-```
-### [TCPing](https://raw.githubusercontent.com/GouGoGoal/SHELL/master/tcping) 查看TCP延迟
-下载到Linux上，给执行权限，就可以了，tcping 1.1.1.1<br>
-### [SpeedTest](https://raw.githubusercontent.com/GouGoGoal/SHELL/master/speedtest) 没啥好说的，给执行权限就行了
-### [Nginx](https://github.com/GouGoGoal/SHELL/tree/master/Nginx) 的使用方法技巧
-### [PHP](https://github.com/GouGoGoal/SHELL/tree/master/PHP) 的apt安装以及部分优化
-### [Mysql](https://github.com/GouGoGoal/SHELL/tree/master/Mysql) 的apt安装以及部分优化
-### [CC脚本](https://github.com/GouGoGoal/SHELL/raw/master/cc.py) 
-```
+
 #升级最新版内核
 echo "deb `cat /etc/apt/sources.list|grep deb-src|awk '{print $2,$3}'`-backports main" >> /etc/apt/sources.list
 apt update
