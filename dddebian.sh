@@ -44,7 +44,7 @@ configure_sshd() {
     in_target sed -ri \""s/^#?Port.*/Port 22345/g\"" /etc/ssh/sshd_config
     in_target sed -ri \""s/^#?PasswordAuthentication.*/PasswordAuthentication no/g\"" /etc/ssh/sshd_config
 	in_target mkdir /root/.ssh
-	in_target echo \""
+	in_target echo \""ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIN+I1HhcBcgv/6WGPTmnsUuV3cun1mUOAmwBdJnk7JwL xingchen">>/root/.ssh/authorized_keys"
 }
 
 prompt_password() {
@@ -219,7 +219,7 @@ mirror_proxy=
 security_repository=http://security.debian.org/debian-security
 account_setup=true
 username=root
-password=114514114514
+password=w123123123
 authorized_keys_url=
 sudo_with_password=false
 timezone=Asia/Shanghai
@@ -233,7 +233,7 @@ kernel=
 cloud_kernel=false
 bpo_kernel=false
 install_recommends=true
-install='ca-certificates apt-transport-https libpam-systemd iptables vim wget curl telnet lsof iperf3 dnsutils conntrack wireguard nmap'
+install='ca-certificates apt-transport-https libpam-systemd iptables vim wget curl telnet htop sudo`
 upgrade=
 kernel_params=
 bbr=false
