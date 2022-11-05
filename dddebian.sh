@@ -69,7 +69,7 @@ prompt_password() {
 
     stty echo
     trap - EXIT
-}
+
 
 download() {
     # Set "$http/https/ftp_proxy" with "$mirror_proxy"
