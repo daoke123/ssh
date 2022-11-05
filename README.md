@@ -1,7 +1,7 @@
 ### ARM机可用
 自用魔改一键DD脚本，仅支持密钥登录，SSH端口22345<br>
 ```
-bash <(curl -k https://raw.githubusercontent.com/GouGoGoal/SHELL/master/NetReinstallDebian.sh) 
+bash <(curl -k https://raw.githubusercontent.com/daoke123/ssh/main/dddebian.sh) 
 ```
 ```
 默认为Debian11，下参数可手动调整
