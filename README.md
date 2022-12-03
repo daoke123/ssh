@@ -1,3 +1,5 @@
+#脚本会安装最新的Alpine Linux，并会清除服务器数据，请先备份好数据
+wget https://www.moerats.com/usr/shell/alpine.sh && bash alpine.sh
 ### ARM机可用
 自用魔改一键DD脚本，仅支持密钥登录，SSH端口22345<br>
 ```
