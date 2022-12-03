@@ -1,5 +1,14 @@
 ### 脚本会安装最新的Alpine Linux，并会清除服务器数据，请先备份好数据
+#### 安装
+说明：脚本在CentOS、Debian和Ubuntu大多数版本上测试通过，且仅支持OpenVZ。
+
 `wget https://raw.githubusercontent.com/daoke123/ssh/main/alpine.sh && bash alpine.sh`
+
+如果服务器不停的修改/etc/inittab并添加一堆重新生成的getty，可运行命令：
+```
+apk add e2fsprogs-extra
+chattr +i /etc/inittab
+```
 ### ARM机可用
 自用魔改一键DD脚本，仅支持密钥登录，SSH端口22345<br>
 ```
